@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
     email:{type:Number ,required:true},
     semester:{type:Number ,required:true},
     credits:Number,
-    member: {type:String ,required:true},
+    member: {type:String ,required:true},//club member trainer, management, media , web design  , non member 
     image :{type:Buffer},
 });
 module.exports= mongoose.model('Item',userSchema);
