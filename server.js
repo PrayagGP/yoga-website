@@ -4,7 +4,7 @@ const path= require('path');
 const multer=require('multer');
 const express=require("express");
 const Route= require('./routes/routes.js');
-const apiUrl=/**"mongodb://localhost:27017/mvc";/*/"mongodb+srv://yogayogayoga:yogayogayoga@cluster0.2k0hk.mongodb.net/testdb?retryWrites=true&w=majority&appName=Cluster0" ;
+const apiUrl="mongodb+srv://yogayogayoga:yogayogayoga@cluster0.2k0hk.mongodb.net/testdb?retryWrites=true&w=majority&appName=Cluster0" ;
 mongoose.connect(apiUrl).then(()=> console.log("Connected to mongodb"))
 .catch(err => console.log("Failed to connect to mongodb",error));
 const app = express();
