@@ -1,3 +1,4 @@
+//mvcmodel\controllers\eventController.js
 const mongoose=require('mongoose');
 const express=require('express');
 const {User, Merch , Event} =require('../models/model.js');
@@ -51,7 +52,10 @@ const deleteEvent=async (req,res)=>{
     try{
             const item= await Event.findByIdAndDelete(req.params.id) ;
             if(!item)
-                return res.status(400).send("event not found");
+            {
+                console.log("EVent not found");
+                return res.status(404).send("event not found");
+            }
                 return res.status(200).send("Event deleted successfully");
     }catch(error) {
         console.log("Cannot delete event ",error);
@@ -72,4 +76,16 @@ const getEventImage = async (req,res) => {
     return res.status(500).send("Cannot get Image");
 }    
 };
-module.exports={getEvents, addEvent,getEventById, deleteEvent ,getEventImage};
+const updateEvent = async (req,res) =>{
+    try{
+            const event = await Event.findByIdAndUpdate(req.params.id,req.body);
+            if(!event)
+                return res.status(404).send("No event found");
+                console.log("Request for update received is",req.body);
+                return res.status(200).send("Event updated successfully");
+    } catch (error) {
+        console.error("Error experienced while processing update request is",error);
+        return res.status(500).send("Cannot update event due to some error");
+    }
+};
+module.exports={getEvents, addEvent,getEventById, deleteEvent ,getEventImage , updateEvent};

@@ -53,10 +53,12 @@ const addUser= async (req,res) =>{
 };
 const deleteUser= async (req,res)=>{
     try{const user= await User.findByIdAndDelete(req.params.id);
-    if(!user)
-        return res.status(200).send("user deleted successfully");
-        return res.status(500).send("Cannot delete User");
-    }catch(error){
+    if(!user){
+        console.log("Cannot find user");
+        return res.status(404).send("Cannot find user");
+    }
+        return res.status(200).send("User deleted successfully");
+    } catch(error){
         console.error("Unable to delete",error);
         return res.status(500).send("An error occured ");
 }};
@@ -75,4 +77,15 @@ const getUserImage= async (req,res) =>{
                 return res.status(500).send("Failed to send image");
         }
 };
-module.exports={getUsers ,addUser ,getUserById,deleteUser,getUserImage};
+const updateUser=async (req,res) =>{
+    try{
+        const user = await User.findByIdAndUpdate(req.params.id,req.body);
+        if(!user)
+            return res.status(404).json({error:"No user found"});
+        console.log("update request received is",req.body,"for user");
+            return res.status(200).send("User updated successfully")
+    } catch(err){
+        return res.status(500).send("User cannot be updated");
+    }
+};
+module.exports={getUsers ,addUser ,getUserById,deleteUser,getUserImage,updateUser};

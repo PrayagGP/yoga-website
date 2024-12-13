@@ -1,3 +1,4 @@
+//mvcmodel\controllers\merchController.js
 const mongoose= require('mongoose');
 const express=require('express');
 const {Merch} = require('../models/model.js');
@@ -54,7 +55,10 @@ const deleteMerch= async (req,res)=> {
     try{
         const merch = await Merch.findByIdAndDelete(req.params.id);
         if(!merch)
+        {
+            console.error("Cannot find merch ");
             return res.status(404).send("Could not find merch");
+        }
             return res.status(200).send("Merch deleted successfully");
 
     }catch(err){
@@ -75,5 +79,14 @@ const getMerchImage= async (req,res) => {
             return res.status(500).send("could not get image");
      }
 };
+const updateMerch = async (req,res) => {
+    try{
+        const merch = await Merch.findByIdAndUpdate(req.params.id, req.body);
+        return res.status(200).send("Merch updated successfully");
+    } catch(err){
+        console.error("error received while updating merch is ", err);
+        return res.status(500).send("Merch cannot be updated due to error");
+    }
+};
 module.exports= {
-    getMerchs, getMerchById,addMerch,deleteMerch, getMerchImage};
+    getMerchs, getMerchById,addMerch,deleteMerch, getMerchImage , updateMerch};
