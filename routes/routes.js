@@ -4,51 +4,85 @@ const path= require('path');
 //const multer=require('multer');
 const express=require("express");
 const cors=require('cors');
+const fs = require('fs');
 //Middleware upload
 
 const upload= require('../middleware/upload.js');
+
+const authenticate= require('../middleware/authenticate.js');
 //Importing controllers
 const userController= require('../controllers/userController.js');
 
 const eventController =require('../controllers/eventController.js');
 
 const merchController=require('../controllers/merchController.js');
+
+const authController=require('../controllers/authController.js');
+
+
 //Routes begin
 const apiUrl="mongodb://localhost:27017/images";
 
 const Route = express();
 
-Route.use(express.static(path.join(__dirname,'../views')));
+//Route.use(express.static(path.join(__dirname,'../views')));
 
-Route.use(cors());
+Route.use(cors({
+    origin:'*',methods:['GET','POST','PUT','DELETE','UPDATE','PATCH'], allowedHeaders:['Content-Type','Authorization']
+}));
 
-Route.post('/users',upload.single('image'),userController.addUser);
+Route.get('/', (req,res)=>{
+    res.sendFile(path.join(__dirname,'../views','index.html'));
+});
 
-Route.get('/users',userController.getUsers);
+Route.post('/login',authController.authoriseAccess);
 
-Route.get('/user/:id',userController.getUserById);
+Route.get('/login',(req,res)=>{
+    res.sendFile(path.join(__dirname,'../views','login.html'));
+});
+
+Route.post('/register',upload.none(),authController.register);
+
+Route.get('/register',(req,res) =>{
+    res.sendFile(path.join(__dirname,'../views','register.html'));});
+
+
+
+//Route.post('/register',authController.register);
+
+Route.post('/users',authenticate ,upload.single('image'),userController.addUser);
+
+Route.get('/users',authenticate ,userController.getUsers);
+
+Route.get('/user/:id',authenticate,userController.getUserById);
 
 Route.get('/user/image/:id',userController.getUserImage);
 
-Route.delete('/users/:id',userController.deleteUser);
+Route.put('/user/:id',userController.updateUser);
 
-Route.post('/events',upload.single('image'),eventController.addEvent);
+Route.delete('/users/:id' ,authenticate,userController.deleteUser);
 
-Route.get('/events',eventController.getEvents);
+Route.post('/events', authenticate , upload.single('image'),eventController.addEvent);
 
-Route.get('/event/:id',eventController.getEventById);
+Route.get('/events',authenticate ,eventController.getEvents);
 
-Route.get('/event/image/:id',eventController.getEventImage);
+Route.get('/event/:id',authenticate ,eventController.getEventById);
 
-Route.delete('/events/:id',eventController.deleteEvent);
+Route.get('/event/image/:id' ,eventController.getEventImage);
 
-Route.post('/merchs',upload.single('image'),merchController.addMerch);
+Route.put('/event/:id',eventController.updateEvent);
 
-Route.get('/merchs', merchController.getMerchs);
+Route.delete('/events/:id',authenticate ,eventController.deleteEvent);
 
-Route.get('/merch/:id',merchController.getMerchById);
+Route.post('/merchs',authenticate ,upload.single('image'),merchController.addMerch);
 
-Route.get('/merch/image/:id',merchController.getMerchImage);
+Route.get('/merchs', authenticate ,merchController.getMerchs);
 
-Route.delete('/merchs/:id',merchController.deleteMerch);
+Route.get('/merch/:id',authenticate ,merchController.getMerchById);
+
+Route.get('/merch/image/:id' ,merchController.getMerchImage);
+
+Route.put('/merch/:id',merchController.updateMerch);
+
+Route.delete('/merchs/:id',authenticate ,merchController.deleteMerch);
 module.exports = Route;
