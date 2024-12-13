@@ -23,7 +23,7 @@ const authoriseAccess= async (req,res)=>{
         console.log("Password does not match");
         return res.status(400).send("Wrong password enterred");
     }
-        const token = jwt.sign({id:user.id}, process.env.TOKEN ,{expiresIn :'1h'});
+        const token = jwt.sign({id:user.id}, process.env.TOKEN ,{expiresIn :'24h'});
         console.log("Successfuly logged in");
         return res.json({token,user:{id:user._id, email:user.email},ok:true});
     } catch(error) {
