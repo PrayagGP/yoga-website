@@ -1,36 +1,70 @@
-import React, { useState } from "react"; // Import React and useState hook
-import threeline from "../assets/threeline.svg"; // Path to your menu icon
-import searchicon from "../assets/searchicon.svg"; // Path to your search icon
-import "./Header.css"; // Your CSS file for styles
+import React from "react";
+import "./HomePage.css";
 
-const Header = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // State to manage sidebar visibility
-
-  // Function to toggle the sidebar visibility
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-
+const Homepage = () => {
   return (
-    <header className="header">
-      <img
-        src={threeline}
-        alt="Menu"
-        className="icons"
-        onClick={toggleSidebar} // Toggle sidebar visibility on click
-      />
-      <h1 className="name">YOGA CLUB</h1>
-      <img src={searchicon} alt="Search" className="icons" />
-      
-      {/* Sidebar toggle (you can use this to add a sidebar component if necessary) */}
-      {isSidebarOpen && (
-        <div className="sidebar">
-          {/* Sidebar content goes here */}
-          <p>Sidebar content...</p>
+    <div className="homepage">
+      {/* Hero Section */}
+      <div className="hero">
+        <div className="hero-overlay">
+          <h1>Yoga Club</h1>
+          <p>Explore mindfulness and holistic well-being</p>
         </div>
-      )}
-    </header>
+      </div>
+
+      {/* Event Categories */}
+      <div className="events">
+        <div className="event-card">
+          <div className="event-image ongoing-events"></div>
+          <h2>Ongoing Events</h2>
+        </div>
+        <div className="event-card">
+          <div className="event-image upcoming-events"></div>
+          <h2>Upcoming Events</h2>
+        </div>
+        <div className="event-card">
+          <div className="event-image past-events"></div>
+          <h2>Past Events</h2>
+        </div>
+      </div>
+
+      {/* About Us Section */}
+      <div className="about-us">
+        <div className="about-content">
+          <h1>About Us</h1>
+          <p>
+            The Yoga Club at NITK is a vibrant community dedicated to promoting
+            physical well-being, mental clarity, and spiritual growth among
+            students and faculty. Rooted in the ancient traditions of yoga, the
+            club provides a serene space for individuals to explore the art of
+            mindfulness and holistic living amidst the dynamic campus life.
+            Whether you’re a beginner or an experienced practitioner, the Yoga
+            Club welcomes everyone to join this journey of self-discovery and
+            inner peace.
+          </p>
+        </div>
+        <div className="about-image"></div>
+      </div>
+
+      {/* Webinars Section */}
+      <div className="webinars">
+        <h1>Webinars</h1>
+        <div className="webinar-cards">
+          <div className="webinar-card webinar-1"></div>
+          <div className="webinar-card webinar-2"></div>
+          <div className="webinar-card webinar-3"></div>
+        </div>
+      </div>
+      <div className="webinars">
+        <h1>Webinars</h1>
+        <div className="webinar-cards">
+          <div className="webinar-card webinar-1"></div>
+          <div className="webinar-card webinar-2"></div>
+          <div className="webinar-card webinar-3"></div>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Header;
+export default Homepage;
