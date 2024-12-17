@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.Events {
+    position: relative;
+    width: 360px;
+    height: 224px;
+    margin: 15px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.CurrEve::before, .UpcomEve::before, .PastEve::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1.5px);
+    z-index: 1;
+}
+
+.CurrEve::before {
+    background-image: url("../assets/profile.png");
+}
+
+.UpcomEve::before {
+    background-image: url('../assets/profile.png');
+}
+
+.PastEve::before {
+    background-image: url('../assets/profile.png');
+}
+
+.Events::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.Event {
+    position: relative;
+    z-index: 3;
+    color: white;
+    text-align: center;
+    font-size: 34px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    line-height: 215px;
+}
