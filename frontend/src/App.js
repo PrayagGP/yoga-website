@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Header />
-      <TeamcatogPage />
+      <Homepage />
       <Footer /> {/* Footer uses Link, so this works now */}
     </div>
   );
