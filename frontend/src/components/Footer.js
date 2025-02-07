@@ -15,7 +15,9 @@ const Footer = () => {
       <Link to="/saved">
         <img src={calendaricon} alt="Bookmark" className="icons" />
       </Link>
-      <img src={callicon} alt="Like" className="icons" />
+      <Link to="/contact">
+      <img src={callicon} alt="Contact" className="icons" />
+      </Link>
       <Link to="/profile">
         <img src={profile} alt="Profile" className="profile-pic icons" />
         </Link>

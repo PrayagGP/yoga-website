@@ -85,4 +85,16 @@ Route.get('/merch/image/:id' ,merchController.getMerchImage);
 Route.put('/merch/:id',merchController.updateMerch);
 
 Route.delete('/merchs/:id',authenticate ,merchController.deleteMerch);
+
+//contact page routes
+Route.post('/api/contact', async (req, res) => {
+    try {
+        const { name, email, rollNo, query } = req.body;
+        // Add validation and email sending logic here
+        res.status(200).json({ message: 'Message sent successfully' });
+        } catch (error) {
+        res.status(500).json({ error: 'Failed to send message' });
+    }
+});
+
 module.exports = Route;
