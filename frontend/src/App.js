@@ -12,7 +12,7 @@ function App() {
       <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/contact" element={<Contact />} />
-        </Routes>
+      </Routes>
       <Footer /> {/* Footer uses Link, so this works now */}
     </div>
   );
