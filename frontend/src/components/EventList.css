@@ -1,0 +1,98 @@
+/* Events.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #6d4e18;
+  }
+  
+  .events-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .event-card {
+    display: flex;
+    /* align-items: center; */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 260px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-image {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .event-details {
+    margin-left: 8px;
+  }
+  
+  .event-title {
+    font-size: 20px;
+    color: #6d4e18;
+    margin: 0px 0px 4px 0px ;
+  }
+  
+  .event-description {
+    font-size: 9.5px;
+    color: #555;
+  }
+
+  .event-infobox{
+    margin:14px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .event-info {
+    font-size: 10.3px;
+    color: #333;
+  }
+
+  .poc{
+    margin:14px 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    font-size: 10.3px;
+    color: #333;
+    margin:2px 0;
+  }
+  
+  .event-button {
+    background-color: #6d4e18;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .event-button:hover {
+    background-color: #5c4014;
+  }
+  

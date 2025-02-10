@@ -7,26 +7,21 @@ const Homepage = () => {
       {/* Hero Section */}
       <div className="hero">
         <div className="hero-overlay">
-          <h1>Yoga Club</h1>
-          <p>Explore mindfulness and holistic well-being</p>
+          {/* <h1>Yoga Club</h1> */}
+          {/* <p>Explore mindfulness and holistic well-being</p> */}
         </div>
       </div>
 
       {/* Event Categories */}
       <div className="events">
-        <div className="event-card">
-          <div className="event-image ongoing-events"></div>
-          <h2>Ongoing Events</h2>
-        </div>
-        <div className="event-card">
-          <div className="event-image upcoming-events"></div>
-          <h2>Upcoming Events</h2>
-        </div>
-        <div className="event-card">
-          <div className="event-image past-events"></div>
-          <h2>Past Events</h2>
+        <h1>Events</h1>
+        <div className="events-cards">
+          <div className="events-card events-1"></div>
+          <div className="events-card events-2"></div>
+          <div className="events-card events-3"></div>
         </div>
       </div>
+
 
       {/* About Us Section */}
       <div className="about-us">
@@ -55,12 +50,10 @@ const Homepage = () => {
           <div className="webinar-card webinar-3"></div>
         </div>
       </div>
-      <div className="webinars">
-        <h1>Webinars</h1>
-        <div className="webinar-cards">
-          <div className="webinar-card webinar-1"></div>
-          <div className="webinar-card webinar-2"></div>
-          <div className="webinar-card webinar-3"></div>
+      <div className="hero">
+        <div className="hero-overlay">
+          <h1>Meet our Team</h1>
+          {/* <p>Explore mindfulness and holistic well-being</p> */}
         </div>
       </div>
     </div>
