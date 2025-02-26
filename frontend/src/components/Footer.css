@@ -25,3 +25,19 @@
     width: 32px;
     height: 32px;
   }
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 4px 0;
+  }
+  
+  .icons {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .profile-pic {
+    width: 24px;
+    height: 24px;
+  }
+}
