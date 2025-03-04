@@ -14,8 +14,10 @@
   /* Hero Section */
   .hero {
     position: relative;
-    height: 220px;
+    height: 70vh;
     background: url("../assets/profile.png") center/cover no-repeat;
+    width: 100%;
+    aspect-ratio: 16/9;
   }
   
   .hero-overlay {
@@ -68,14 +70,20 @@
 
 .events-1 {
   background: url("../assets/profile.png") center/cover no-repeat;
+  width: 100%;
+  transition: transform 0.3s ease;
 }
 
 .events-2 {
   background: url("../assets/profile.png") center/cover no-repeat;
+  width: 100%;
+  transition: transform 0.3s ease;
 }
 
 .events-3 {
   background: url("../assets/profile.png") center/cover no-repeat;
+  width: 100%;
+  transition: transform 0.3s ease;
 }
 
   
