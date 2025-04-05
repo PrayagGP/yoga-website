@@ -1,0 +1,244 @@
+[33mcommit 74ce4d49d7824d91ac311b994fc17a0588318c2f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mNischal-frontend[m[33m)[m
+Author: Nischal Basavaraju <nischal.basavaraju@gmail.com>
+Date:   Tue Feb 25 22:35:53 2025 +0530
+
+    Improve Responsiveness
+
+[33mcommit a7b167cb2436a49e989bbb994bbd60d69d80294b[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 7a9df1d 230a46b
+Author: PrayagGP <127178102+PrayagGP@users.noreply.github.com>
+Date:   Sat Feb 15 23:34:49 2025 +0530
+
+    Merge pull request #4 from PrayagGP/Frontend
+    
+    Frontend
+
+[33mcommit 7a9df1dfc6c1e2962b0179a6ec4ef43ebea5294a[m
+Merge: dd795f2 b05c40c
+Author: PrayagGP <127178102+PrayagGP@users.noreply.github.com>
+Date:   Mon Feb 10 23:27:47 2025 +0530
+
+    Merge pull request #5 from PrayagGP/Nischal-frontend
+    
+    Added EventDetails and DevelopersTeam component
+
+[33mcommit b05c40c47b4602a324cf9dd5ca07fe8b4411b96b[m[33m ([m[1;31morigin/Nischal-frontend[m[33m)[m
+Author: Nischal Basavaraju <nischal.basavaraju@gmail.com>
+Date:   Mon Feb 10 22:04:49 2025 +0530
+
+    Added EventDetails and DevelopersTeam component
+
+[33mcommit 230a46b18511e887a819486be25c60d38ed69cd2[m[33m ([m[1;31morigin/Frontend[m[33m)[m
+Merge: 7aada19 dd795f2
+Author: Khushisesma <130694683+Khushisesma@users.noreply.github.com>
+Date:   Mon Feb 10 18:38:19 2025 +0530
+
+    contactjs
+
+[33mcommit dd795f28c1fed336cea3a1a39828cb0bcbd03409[m
+Merge: fbaa4bd 1088838
+Author: PrayagGP <127178102+PrayagGP@users.noreply.github.com>
+Date:   Sat Feb 8 00:11:11 2025 +0530
+
+    Merge pull request #3 from PrayagGP/Nischal-frontend
+    
+    Contact Page Implementation
+
+[33mcommit 1088838e39c888f73e099d5043253e4ba592ea26[m
+Author: Nischal Basavaraju <nischal.basavaraju@gmail.com>
+Date:   Fri Feb 7 23:59:18 2025 +0530
+
+    Updated backend routes for contact page functionality
+
+[33mcommit 9a56eed6cb1716da334dd20ab4ebd01b67bb3097[m
+Author: Nischal Basavaraju <nischal.basavaraju@gmail.com>
+Date:   Fri Feb 7 23:56:18 2025 +0530
+
+    Added Contact Page
+
+[33mcommit 7aada1944a02095cadc1ac9e26ff45ca2301deef[m
+Author: Khushisesma <130694683+Khushisesma@users.noreply.github.com>
+Date:   Mon Jan 20 04:02:39 2025 +0530
+
+    team front page
+
+[33mcommit c90531c2613bb8bc246a587cefa21418eda1a51d[m
+Author: Khushisesma <130694683+Khushisesma@users.noreply.github.com>
+Date:   Mon Jan 20 03:41:43 2025 +0530
+
+    team front page
+
+[33mcommit 6178262242e6187a6f15c6533ce798f9c14c9564[m
+Author: Khushisesma <130694683+Khushisesma@users.noreply.github.com>
+Date:   Mon Jan 20 03:27:12 2025 +0530
+
+    events page and teams page updated
+
+[33mcommit e30c52a388fc03f21becc06b0667eb4dc1fa16db[m
+Author: Khushisesma <130694683+Khushisesma@users.noreply.github.com>
+Date:   Tue Dec 17 21:03:02 2024 +0530
+
+    Event page initialised
+
+[33mcommit fbaa4bd4c145068b2c2b011b6d598730fa3c8789[m[33m ([m[1;32mmain[m[33m)[m
+Merge: 8fcd4c6 b8dcb7e
+Author: Nischal Basavaraju <143579480+Nischalb10@users.noreply.github.com>
+Date:   Tue Dec 17 00:29:30 2024 +0530
+
+    Merge pull request #2 from PrayagGP/NischalB(Backend)
+    
+    Add files via upload
+
+[33mcommit b8dcb7e6218c0240105ee28bc12e6fca33445203[m[33m ([m[1;31morigin/NischalB(Backend)[m[33m)[m
+Author: Nischal Basavaraju <143579480+Nischalb10@users.noreply.github.com>
+Date:   Tue Dec 17 00:28:37 2024 +0530
+
+    Add files via upload
+    
+    Complete yoga poses tutorial page backend with own yoga_api
+
+[33mcommit 8fcd4c64bb2a6a86749f1a117433cada1615342f[m
+Author: Khushisesma <130694683+Khushisesma@users.noreply.github.com>
+Date:   Mon Dec 16 18:54:27 2024 +0530
+
+    homepage second edit
+
+[33mcommit 7599b97b6e41147e578e891caab554451ab0178b[m
+Author: Khushisesma <130694683+Khushisesma@users.noreply.github.com>
+Date:   Sun Dec 15 23:30:03 2024 +0530
+
+    homepage random
+
+[33mcommit 28048a2c8ab2cb19f9364352f9258bc142e6b4a6[m
+Author: Khushisesma <130694683+Khushisesma@users.noreply.github.com>
+Date:   Sat Dec 14 16:28:36 2024 +0530
+
+    header and footer
+
+[33mcommit e3fb2bd67f79a47fb237a40ec5318fb4d1beb1ae[m
+Author: Khushisesma <130694683+Khushisesma@users.noreply.github.com>
+Date:   Fri Dec 13 22:24:52 2024 +0530
+
+    frontend initialize
+
+[33mcommit 438a4d7a71e605c689af0562b0d973dcf4bad39e[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 22:34:45 2024 +0530
+
+    Update authController.js
+
+[33mcommit 3635c51138e7a921f052fc143e09d507f5fcbd54[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 22:34:34 2024 +0530
+
+    Update authController.js
+
+[33mcommit 65a254a9a458516f3a31aa11afde45b3ac5e923f[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 22:32:24 2024 +0530
+
+    Update authController.js
+
+[33mcommit c4756c2a9f98095cc2a55511ccd46c25abb706f8[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 22:30:40 2024 +0530
+
+    Update authController.js
+
+[33mcommit d9b0d722971c9ad50c53fa8c7072d88ff4cf019f[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 21:16:56 2024 +0530
+
+    Add files via upload
+
+[33mcommit 847faecc27d9513903b6cb707d98cb274bc7edca[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 21:16:40 2024 +0530
+
+    Delete package.json
+
+[33mcommit ab2398a84980bbb1844a3616ee5c78c8e1150e86[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 21:16:09 2024 +0530
+
+    Update server.js
+
+[33mcommit 33596cfcf0a7af976eacc810f350591f763390c7[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 21:15:25 2024 +0530
+
+    Add files via upload
+
+[33mcommit 978358803e99a80b6ecdf72ae363a80881cb9fec[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 21:15:02 2024 +0530
+
+    Add files via upload
+
+[33mcommit b539d7ffde967910c1ba87916004acb1cb8ddf53[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 20:40:47 2024 +0530
+
+    Create .env
+
+[33mcommit 1d81ccc784def33e0530173a501ee210c2762454[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 20:39:31 2024 +0530
+
+    Create .gitignore
+
+[33mcommit e32aa4ca88dcec57d0b2f47dfc1af9323b0c9140[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 20:38:31 2024 +0530
+
+    Delete package-lock.json
+
+[33mcommit 572a9343383619c4ffa05f4a3241bb32bd00e6e4[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 20:37:50 2024 +0530
+
+    Delete views/frontend.js
+
+[33mcommit b1a44fe2bfdfd412b7aa216d2bef62600e27bc66[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 20:37:26 2024 +0530
+
+    Add files via upload
+
+[33mcommit 698560c8406f905210d23a92accdad81dd6f5562[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 20:36:56 2024 +0530
+
+    Add files via upload
+
+[33mcommit 9d9f051af1b0eee3b4b4f5766d861ffddbb52518[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 20:35:53 2024 +0530
+
+    Add files via upload
+
+[33mcommit ff88385a39e146466d26908ad04f07b3ec62b44b[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 20:34:41 2024 +0530
+
+    Add files via upload
+
+[33mcommit 27076ba67345bd882d740034b9ba94f4dcb03a65[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Fri Dec 13 20:34:03 2024 +0530
+
+    Add files via upload
+
+[33mcommit 0f202f9d77da475981438eeaf78e6e59406bc830[m
+Author: Dev Chaudhari <devchaudhari.231cs221@nitk.edu.in>
+Date:   Wed Dec 11 12:02:41 2024 +0530
+
+    Add files via upload
+    
+    given files are just for create read and delete operations. Further work is needed for allowing authentication . Then further efforts can be made for payment gateways.
+
+[33mcommit 061267f4527ef09ebee20cc0c4c726ed84a7f232[m
+Author: PrayagGP <127178102+PrayagGP@users.noreply.github.com>
+Date:   Wed Dec 4 21:30:41 2024 +0530
+
+    Initial commit
