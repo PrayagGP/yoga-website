@@ -1,0 +1,49 @@
+<!--mvcmodel\views\index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> List Of Users Enrolled</h1>
+    <form enctype="multipart/form-data" id="uploadForm">
+        <input type="text" id ="name" placeholder="name">
+        <input type ="text" id="rollno" placeholder="rollno">
+        <input type="email" id="email" placeholder="email">
+        <input type="number" id="semester" placeholder="semester">
+        <input type="text" id="password" placeholder="password">
+        <input type="text" id="member" placeholder="member">
+        <input type="file" id="image" name="image" placeholder="image">
+        <input type="submit">
+    </form>
+    <div id="users"></div>
+    <h1>List of Events</h1>
+    <form enctype="multipart/form-data" id="uploadEvent">
+        <input type="text" id="nameEvent" placeholder="Event name">
+        <input type="text" id="venueEvent" placeholder="Venue">
+        <input type="number" id="dateEvent" placeholder="Date">
+        <input type="text" id="timeEvent" placeholder="Time">
+        <input type="text" id="guestEvent" placeholder="Guest">
+        <input type="number" id = "seatsEvent" placeholder="Seats">
+        <input type="description" id="descriptionEvent" placeholder="Description">
+        <input type="file" id="imageEvent" placeholder="image">
+        
+        <input type="submit">
+    </form>
+    <div id="events"  ></div>
+    <h1> List of Merchs</h1>
+    <form enctype="multipart/form-data" id="uploadMerch">
+        <input type="text" id="nameMerch" placeholder ="Merch Name">
+        <input type="number" id="priceMerch" placeholder = "Price">
+        <input type="text" id="descriptionMerch" placeholder="Description">
+        <input type="file" id="imageMerch" placeholder="Image">
+        <input type="submit">
+    </form>
+    <div id = "merchs"></div>
+    <h1> Logout option</h1>
+    <button id="logout">Logout</button>
+    <script src="./index.js"></script>
+</body>
+</html>

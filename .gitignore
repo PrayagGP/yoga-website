@@ -1,0 +1,4 @@
+.env
+node_modules/
+yoga-website/node_modules/ 
+

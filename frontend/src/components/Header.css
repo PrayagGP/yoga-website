@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Iowan+Old+Style:wght@700&display=swap');
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Hind', sans-serif;
+  background-color: white;
+}
+
+/* Homepage container */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-y: auto; /* Make homepage scrollable independently */
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center everything horizontally */
+  background-color: white;
+  color: black;
+  padding: 0px 16px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.menu-icon img,
+.search-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.name {
+  font-family: 'Iowan Old Style', serif;
+  font-size: 24px;
+  color: BLACK;
+  text-align: center;
+  flex-grow: 1; /* Allows it to take available space and remain centered */
+}
+
+.menu-icon,
+.search-icon {
+  position: absolute;
+}
+
+.menu-icon {
+  left: 16px;
+}
+
+.search-icon {
+  right: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 8px;
+  }
+  
+  .name {
+    font-size: 20px;
+  }
+  
+  .icons {
+    width: 20px;
+    height: 20px;
+  }
+}
