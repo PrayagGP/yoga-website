@@ -19,11 +19,19 @@ body {
 .header {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   justify-content: space-between;
+=======
+  justify-content: center; /* Center everything horizontally */
+>>>>>>> 2013c7f895fbeb786f63f9a81d3c67a6cf249f89
   background-color: white;
   color: black;
   padding: 0px 16px;
   border-bottom: 1px solid #ddd;
+<<<<<<< HEAD
+=======
+  position: relative;
+>>>>>>> 2013c7f895fbeb786f63f9a81d3c67a6cf249f89
 }
 
 .menu-icon img,
@@ -36,6 +44,24 @@ body {
   font-family: 'Iowan Old Style', serif;
   font-size: 24px;
   color: BLACK;
+<<<<<<< HEAD
+=======
+  text-align: center;
+  flex-grow: 1; /* Allows it to take available space and remain centered */
+}
+
+.menu-icon,
+.search-icon {
+  position: absolute;
+}
+
+.menu-icon {
+  left: 16px;
+}
+
+.search-icon {
+  right: 16px;
+>>>>>>> 2013c7f895fbeb786f63f9a81d3c67a6cf249f89
 }
 
 @media screen and (max-width: 768px) {
@@ -51,4 +77,8 @@ body {
     width: 20px;
     height: 20px;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2013c7f895fbeb786f63f9a81d3c67a6cf249f89

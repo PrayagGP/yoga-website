@@ -1,0 +1,78 @@
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 20px;
+}
+
+/* When sidebar is open */
+.sidebar.open {
+    left: 0;
+}
+
+/* Hamburger button */
+.hamburger {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+/* Logo section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-section img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: #f0f0f0;
+}
+
+/* Profile section */
+.profile-section {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
