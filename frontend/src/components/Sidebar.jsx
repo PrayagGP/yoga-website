@@ -24,9 +24,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           <Link to="/events" className="nav-link" onClick={toggleSidebar}>Events</Link>
           <Link to="/calendar" className="nav-link" onClick={toggleSidebar}>Calendar</Link>
           <Link to="/webinars" className="nav-link" onClick={toggleSidebar}>Webinars</Link>
-          <Link to="/members" className="nav-link" onClick={toggleSidebar}>Club Members</Link>
-          <Link to="/team" className="nav-link" onClick={toggleSidebar}>Inter NIT Team</Link>
-          <Link to="/developers" className="nav-link" onClick={toggleSidebar}>Developers Team</Link>
+          <Link to="/teamcatog" className="nav-link" onClick={toggleSidebar}>Club Members</Link>
+          <Link to="/members?team=internit" className="nav-link" onClick={toggleSidebar}>Inter NIT Team</Link>
+          <Link to="/members?team=developers" className="nav-link" onClick={toggleSidebar}>Developers Team</Link>
           <Link to="/settings" className="nav-link" onClick={toggleSidebar}>Settings</Link>
         </nav>
 

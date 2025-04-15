@@ -55,7 +55,15 @@
   font-weight: bold;
   font-size: 1rem;
   text-align: center;
+  text-decoration: none;
+  color: inherit;
 }
+
+.card-image:hover {
+  text-decoration: none;  /* Ensure no underline on hover */
+  transform: scale(1.02);  /* Optional: add subtle hover effect */
+}
+
 .card-image::before {
   content: '';
   position: absolute;
@@ -102,6 +110,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 .see-more:hover {
   background: #555;
@@ -114,10 +123,20 @@
   background: #f8f8f8;
 }
 .team-image {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
   height: 250px;
   margin: 1rem 0;
   background: url('https://images.unsplash.com/photo-1599447421416-3414500d18a5') center/cover no-repeat;
   border-radius: 12px;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.team-image:hover {
+  transform: scale(1.02);
 }
 
 /* Responsive */

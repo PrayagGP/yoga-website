@@ -1,5 +1,7 @@
 // React Component
 import React from 'react';
+import { useSearchParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './EventList.css';
 import eventImage1 from '../assets/profile.png';
 import eventImage2 from '../assets/profile.png';
@@ -27,17 +29,33 @@ const EventCard = ({ event }) => {
           ))}
         </ul>
         </p>
-        <button className="event-button">More about event</button>
+        <Link to="/eventdetails" className="event-button">More about event</Link>
       </div>
     </div>
   );
 };
 
 const EventsList = () => {
+  const [searchParams] = useSearchParams();
+  const eventType = searchParams.get('type') || 'current';
+
+  const getTitle = () => {
+    switch(eventType) {
+      case 'upcoming':
+        return 'Upcoming Events';
+      case 'past':
+        return 'Past Events';
+      default:
+        return 'Current Events';
+    }
+  };
+
+  const filteredEvents = eventsData.filter(event => event.type === eventType);
+  
   return (
     <div className="events-list">
-      <h1 className="page-title">Current Events</h1>
-      {eventsData.map((event, index) => (
+      <h1 className="page-title">{getTitle()}</h1>
+      {filteredEvents.map((event, index) => (
         <EventCard key={index} event={event} />
       ))}
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 function Homepage() {
@@ -12,15 +13,15 @@ function Homepage() {
       {/* Event Categories */}
       <section className="events">
         <div className="events-cards">
-          <div className="card-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1551907234-07643e5bcb97')" }}>
+          <Link to="/eventslist?type=current" className="card-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1551907234-07643e5bcb97')" }}>
             <h3>Ongoing Events</h3>
-          </div>
-          <div className="card-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1571019613914-85f342c1d4ef')" }}>
+          </Link>
+          <Link to="/eventslist?type=upcoming" className="card-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1571019613914-85f342c1d4ef')" }}>
             <h3>Upcoming Events</h3>
-          </div>
-          <div className="card-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')" }}>
+          </Link>
+          <Link to="/eventslist?type=past" className="card-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')" }}>
             <h3>Past Events</h3>
-          </div>
+          </Link>
         </div>
       </section>
 
@@ -56,13 +57,16 @@ function Homepage() {
             <h3>Third</h3>
           </div>
         </div>
-        <button className="see-more">See More</button>
+        <Link to="/webinars" className="see-more">See More</Link>
       </section>
 
       {/* Team */}
       <section className="team">
         <h2>Meet our Team</h2>
-        <div className="team-image"></div>
+        <Link to="/teamcatog" className="team-image">
+          <div className="hero-overlay">
+          </div>
+        </Link>
       </section>
     </div>
   );
