@@ -8,6 +8,7 @@ const EventsData = [
   {
     name: 'Event 1',
     description: 'Description for Event 1',
+    type: 'current',
     date: '10/12/2024',
     time: '6:00 pm - 11:00 pm',
     venue: 'Yoga Hall, NSC',
@@ -20,6 +21,7 @@ const EventsData = [
   {
     name: 'Event 2',
     description: 'Description for Event 2',
+    type: 'upcoming',
     date: '11/12/2024',
     time: '5:00 pm - 9:00 pm',
     venue: 'Main Auditorium',
@@ -32,6 +34,7 @@ const EventsData = [
   {
     name: 'Event 3',
     description: 'Description for Event 3',
+    type: 'upcoming',
     date: '12/12/2024',
     time: '7:00 pm - 10:00 pm',
     venue: 'Conference Room',
@@ -44,6 +47,7 @@ const EventsData = [
   {
     name: 'Event 4',
     description: 'Description for Event 4',
+    type: 'past',
     date: '13/12/2024',
     time: '4:00 pm - 8:00 pm',
     venue: 'Community Center',

@@ -19,11 +19,12 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* Center everything horizontally */
   background-color: white;
   color: black;
   padding: 0px 16px;
   border-bottom: 1px solid #ddd;
+  position: relative;
 }
 
 .menu-icon img,
@@ -36,6 +37,21 @@ body {
   font-family: 'Iowan Old Style', serif;
   font-size: 24px;
   color: BLACK;
+  text-align: center;
+  flex-grow: 1; /* Allows it to take available space and remain centered */
+}
+
+.menu-icon,
+.search-icon {
+  position: absolute;
+}
+
+.menu-icon {
+  left: 16px;
+}
+
+.search-icon {
+  right: 16px;
 }
 
 @media screen and (max-width: 768px) {

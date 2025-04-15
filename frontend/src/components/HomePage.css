@@ -1,156 +1,165 @@
-/* General Styling */
 .homepage {
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* h1, h2, p {
-    margin: 0;
-    padding: 0;
-  } */
-  
-  /* Hero Section */
-  .hero {
-    position: relative;
-    height: 70vh;
-    background: url("../assets/profile.png") center/cover no-repeat;
-    width: 100%;
-    aspect-ratio: 16/9;
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .hero-overlay h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  
-  .hero-overlay p {
-    font-size: 13px;
-  }
-  
-  /* Events Section */
- .events {
-  padding: 0px 8px 8px 8px;
-  text-align: center;
-  margin-bottom: 8px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
 }
 
-.events h1 {
-  font-size: 28px;
-  margin: 8px 0px 8px 0px;
+/* Hero */
+.hero {
+  height: 50vh;
+  background: url('https://images.unsplash.com/photo-1545205597-3d9d02c29597') center/cover no-repeat;
+  position: relative;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
+/* Events Section */
+.events {
+  padding: 2rem 5%;
+}
 .events-cards {
   display: flex;
-  gap: 8px;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.events-card {
-  flex: 1;
-  max-width: 300px;
-  height: 200px;
-  background: #ddd;
+/* Webinars Section */
+.webinars {
+  padding: 3rem 5%;
+  text-align: center;
+}
+.webinar-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
 }
 
-.events-1 {
-  background: url("../assets/profile.png") center/cover no-repeat;
-  width: 100%;
+/* Reusable Card Style */
+.card-image {
+  flex: 1 1 250px;
+  height: 330px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-image:hover {
+  text-decoration: none;  /* Ensure no underline on hover */
+  transform: scale(1.02);  /* Optional: add subtle hover effect */
+}
+
+.card-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.card-image h3 {
+  z-index: 1;
+}
+
+/* About Us Section */
+.about-section {
+  padding: 3rem 5%;
+  background: #f8f8f8;
+}
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about-image {
+  width: 500px; /* updated width */
+  height: 280px; /* updated height */
+  border-radius: 10px;
+  object-fit: cover;
+}
+.about-container p {
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Button */
+.see-more {
+  padding: 0.8rem 2rem;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.see-more:hover {
+  background: #555;
+}
+
+/* Team Section */
+.team {
+  text-align: center;
+  padding: 3rem 5%;
+  background: #f8f8f8;
+}
+.team-image {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  margin: 1rem 0;
+  background: url('https://images.unsplash.com/photo-1599447421416-3414500d18a5') center/cover no-repeat;
+  border-radius: 12px;
+  text-decoration: none;
+  position: relative;
   transition: transform 0.3s ease;
 }
 
-.events-2 {
-  background: url("../assets/profile.png") center/cover no-repeat;
-  width: 100%;
-  transition: transform 0.3s ease;
+.team-image:hover {
+  transform: scale(1.02);
 }
 
-.events-3 {
-  background: url("../assets/profile.png") center/cover no-repeat;
-  width: 100%;
-  transition: transform 0.3s ease;
-}
-
-  
-  /* About Us Section */
-  .about-us {
-    display: flex;
-    gap: 20px;
-    padding: 0px 8px 0px 8px;
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
     align-items: center;
-    background: #fafafa;
   }
-  
-  .about-content {
-    flex: 1;
-  }
-  
-  .about-content h1 {
-    font-size: 28px;
-    margin-bottom: 4px;
-    margin: 0px;
-  }
-  
-  .about-content p {
-    font-size: 12px;
-    line-height: 1.5;
-  }
-  
+
   .about-image {
-    flex: 1;
-    height: 300px;
-    background: url("../assets/profile.png") center/cover no-repeat;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
   }
-  
-  /* Webinars Section */
-  .webinars {
-    padding: 0px 8px 8px 8px;
+
+  .about-container p {
     text-align: center;
-    margin-bottom: 8px;
   }
-  
-  .webinars h1 {
-    font-size: 28px;
-    margin: 8px 0px 8px 0px;
+
+  .card-image {
+    width: 90%;
+    max-width: 250px;
+    height: auto;
+    aspect-ratio: 3 / 4;
   }
-  
-  .webinar-cards {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-  }
-  
-  .webinar-card {
-    flex: 1;
-    max-width: 300px;
-    height: 200px;
-    background: #ddd;
-  }
-  
-  .webinar-1 {
-    background: url("../assets/profile.png") center/cover no-repeat;
-  }
-  
-  .webinar-2 {
-    background: url("../assets/profile.png") center/cover no-repeat;
-  }
-  
-  .webinar-3 {
-    background: url("../assets/profile.png") center/cover no-repeat;
-  }
-  
+}

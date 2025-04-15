@@ -1,26 +1,29 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './EventsPage.css';
 
 const Events = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="Main">
             <div 
                 className="Events CurrEve" 
-                onClick={() => window.location.href = 'CurrentEvents.html'}
+                onClick={() => navigate('/eventslist?type=current')}
             >
                 <div className="Event">Current Events</div>
             </div>
 
             <div 
                 className="Events UpcomEve" 
-                onClick={() => window.location.href = 'UpcomingEvents.html'}
+                onClick={() => navigate('/eventslist?type=upcoming')}
             >
                 <div className="Event">Upcoming Events</div>
             </div>
 
             <div 
                 className="Events PastEve" 
-                onClick={() => window.location.href = 'PastEvents.html'}
+                onClick={() => navigate('/eventslist?type=past')}
             >
                 <div className="Event">Past Events</div>
             </div>
